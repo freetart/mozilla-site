@@ -1,0 +1,279 @@
+// NAVBAR
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  position: sticky;
+
+  &-link {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+  }
+}
+
+.logo {
+  p {
+    @include headingStyles;
+    font-size: 3rem;
+    font-style: italic;
+  }
+
+  span {
+    color: $iconcolor-light;
+  }
+}
+
+// BUTTONS
+
+.btn {
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+  color: $textcolor-white;
+  background-color: $iconcolor-light;
+  transition: background-color 0.4s;
+  border-radius: 0.5rem;
+
+  &:hover {
+    background-color: $bgcolor-secondary;
+  }
+}
+
+// INPUT
+
+.input {
+  width: 30rem;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  border-width: 0.2rem;
+  color: $bgcolor-secondary;
+}
+
+// HERO
+
+.hero-content {
+  h1 {
+    @include headingStyles;
+    font-size: 4rem;
+    margin: 2.5rem 0;
+  }
+
+  a {
+    margin-top: 1.5rem;
+  }
+
+  &-para1 {
+    font-size: 2rem;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+  }
+
+  &-para2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+// SECTION 1 UPPER
+
+.section-1-left {
+  h3 {
+    @include headingStyles;
+    font-size: 2rem;
+  }
+
+  h2 {
+    @include headingStyles;
+    font-size: 3.5rem;
+    margin: 1.5rem 0;
+  }
+
+  p {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    width: 70%;
+  }
+
+  span {
+    font-weight: bold;
+    font-style: italic;
+    color: $bgcolor-secondary;
+  }
+}
+
+// SECTION 1 LOWER
+
+.card {
+  h3 {
+    font-size: 1.5rem;
+    @include headingStyles;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    @include headingStyles;
+  }
+
+  p {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
+}
+
+// SECTION 2
+
+.section-2-heading {
+  @include textAlign;
+  @include headingStyles;
+
+  h3 {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.card-2 {
+  h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
+}
+
+// SECTION 3
+
+.card-3-icon {
+  font-size: 4rem;
+  color: $iconcolor-light;
+  margin-right: 2rem;
+}
+
+.card-3-content {
+  color: $textcolor-white;
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    color: $textcolor-white;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    // width: 70%;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .btn {
+    margin: 2rem 0;
+  }
+}
+
+// NEWSLETTER
+
+.newsletter {
+  &-content {
+    h3 {
+      @include headingStyles;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  &-form {
+    input {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+// FOOTER
+.footer {
+  background-color: $textcolor-dark;
+  color: $textcolor-white;
+
+  a {
+    color: $textcolor-white;
+
+    &:hover {
+      color: $iconcolor-light;
+      text-decoration: underline;
+    }
+  }
+}
+
+// FOOTER UPPER
+
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  li {
+    font-size: 1.5rem;
+    margin: 0.4rem 0;
+  }
+
+  .social-links a,
+  .social-links i {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+}
+
+// FOOTER BOTTOM
+
+.footer-bottom-left {
+  a {
+    margin-right: 0.5rem;
+    font-size: 1.3rem;
+  }
+}
+
+.footer-bottom-right {
+  font-size: 1.2rem;
+}
